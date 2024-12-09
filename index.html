@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espresso Yourself</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="bg-green side-spacing">
+        <nav>
+            <div class="logo">
+                <a href="#">
+                    <img src="assests/coffee logo.png" alt="logo">
+                </a>
+            </div>
+            <ul class="navlist" id="navlist">
+                <li>
+                    <a href="#" class="links peach-clr">Product</a>
+                </li>
+                <li>
+                    <a href="#" class="links peach-clr">Special Offers</a>
+                </li>
+                <li>
+                    <a href="#" class="links peach-clr">The Proccess</a>
+                </li>
+                <li>
+                    <a href="#" class="links peach-clr">Packing</a>
+                </li>
+                <li>
+                    <a href="#" class="links peach-clr">About</a>
+                </li>
+            </ul>
+
+            <div class="action-list">
+              <div class="cart-icon" onclick="viewCart()">
+                🛒 <span class="counter" id="cart-counter">0</span>
+              </div>
+                <a href="#" class="nav-btn">Order Now</a>
+            </div>
+                
+            <div class="hamburger" id="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+        <section class="hero-section bg-green side-spacing">
+            <h1 class="peach-clr">Espresso Yourself</h1>
+            <div class="hero-img">
+                <img src="assests/cold coffee.png" >
+            </div>
+
+            <div class="hero-content">
+                <p class="peach-clr">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates dolorum hic voluptatibus non officiis animi error quaerat ipsum, earum deserunt numquam.
+                </p>
+                <div class="social-list">
+                    <a href="#" class="icons-link bg-peach">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="icons-link bg-peach">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="#" class="icons-link bg-peach">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#" class="icons-link bg-peach">
+                        <i class="fa-brands fa-pinterest-p"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="headline">
+                <div class="headline-content">
+                    <img src="assests/headline icon.png" >
+                    <h4>Espresso</h4>
+                    <img src="assests/headline icon.png" >
+                    <h4>Cappuccino</h4>
+                    <img src="assests/headline icon.png" >
+                    <h4>Mocha</h4>
+                    <img src="assests/headline icon.png" >
+                    <h4>Lattes</h4>
+                    <img src="assests/headline icon.png" >
+                    <h4>Cold brew</h4>
+                    <div class="headline-content">
+                </div>
+                <div class="headline-content">
+                    <img src="assests/headline icon.png" >
+                    <h4>Espresso</h4>
+                    <img src="assests/headline icon.png" >
+                    <h4>Cappuccino</h4>
+                    <img src="assests/headline icon.png" >
+                    <h4>Mocha</h4>
+                    <img src="assests/headline icon.png" >
+                    <h4>Lattes</h4>
+                    <img src="assests/headline icon.png" >
+                    <h4>Cold brew</h4>
+                    <div class="headline-content">
+                    <img src="assests/headline icon.png" >
+                </div>
+                
+            </div>
+
+            
+        </section>
+        
+        <section class="working-section bg-peach side-spacing">
+            <div class="hero-content">
+                <div class="img-part">
+                    <img src="assests/coffee beans.png">
+                </div>
+                <p class="green-clr">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto nostrum architecto nisi blanditiis quam unde aliquid. Obcaecati repellat ipsam reiciendis molestias?
+                </p>
+            </div>
+            <h2 class="green-clr">our coffee</h2>
+            <div class="card-grid" style="margin-bottom: 40px;">
+                <div class="card ">
+                  <h3>Latte:</h3>  
+                  <div class="card-inner" style="margin-bottom: 5px;">
+                    <div class="card-front">
+                      <img src="assests/latte.jpg" alt="Image 1">
+                    </div>
+                    <div class="card-back card-back1">  
+                      <p style="text-align: center; padding: 2px;">Enjoy the rich, smooth flavor of our expertly crafted Latte—your perfect daily pick-me-up.</p>
+                    </div>
+                  </div>
+                  <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+                </div>
+                <div class="card">
+                    <h3>Mocha:</h3>
+                  <div class="card-inner" style="margin-bottom: 5px;">
+                    <div class="card-front">
+                      <img src="assests/mocha.jpeg" alt="Image 2">
+                    </div>
+                    <div class="card-back card-back2">
+                    <p style="text-align: center; padding: 2px;">Indulge in our creamy Mocha—smooth chocolate and espresso, the ultimate treat for your senses.</p>
+                    </div>
+                  </div>
+                  <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+                </div>
+                <div class="card">
+                    <h3>Affogato:</h3>
+                  <div class="card-inner" style="margin-bottom: 5px;">
+                    <div class="card-front">
+                      <img src="assests/affogato.jpg" alt="Image 3">
+                    </div>
+                    <div class="card-back card-back3">
+                      <p style="text-align: center; padding: 2px;">Experience our rich Affogato—a delicious scoop of ice cream drowned in freshly brewed espresso.</p>
+                    </div>
+                  </div>
+                  <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+                </div>
+                <div class="card">
+                    <h3>Capuccino:</h3>
+                  <div class="card-inner" style="margin-bottom: 5px;">
+                    <div class="card-front">
+                      <img src="assests/capuccino.jpg" alt="Image 4">
+                    </div>
+                    <div class="card-back card-back4">
+                      <p style="text-align: center; padding: 2px;">Savor the bold, creamy taste of our Cappuccino, made with the finest espresso and steamed milk.</p>
+                    </div>
+                  </div>
+                  <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+                </div>
+                <div class="card">
+                    <h3>Americano:</h3>
+                  <div class="card-inner" style="margin-bottom: 5px;">
+                    <div class="card-front">
+                      <img src="assests/americano.jpg" alt="Image 5">
+                    </div>
+                    <div class="card-back card-back5">
+                      <p style="text-align: center; padding: 2px;">Experience the rich, robust flavor of our Americano – a smooth blend of espresso and hot water.</p>
+                    </div>
+                  </div>
+                  <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+                </div>
+                <div class="card">
+                    <h3>Flat White:</h3>
+                  <div class="card-inner" style="margin-bottom: 5px;">
+                    <div class="card-front">
+                      <img src="assests/flat white.jpg" alt="Image 6">
+                    </div>
+                    <div class="card-back card-back6">
+                      <p style="text-align: center; padding: 2px;">Discover the creamy texture and bold flavors of our expertly crafted Flat White, made just for you."</p>
+                    </div>
+                  </div>
+                  <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+                </div>
+                <div class="card">
+                    <h3>Frappe:</h3>
+                  <div class="card-inner" style="margin-bottom: 5px;">
+                    <div class="card-front">
+                      <img src="assests/frappe.jpeg" alt="Image 7">
+                    </div>
+                    <div class="card-back card-back7">
+                      <p style="text-align: center; padding: 2px;">Enjoy the chilled, refreshing blend of our creamy Frappe, perfect for a hot day or anytime you need a pick-me-up.</p>
+                    </div>
+                  </div>
+                  <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+                </div>
+                <div class="card" style="margin-bottom: 5px;">
+                    <h3>Cartedo:</h3>
+                  <div class="card-inner" style="margin-bottom: 5px;">
+                    <div class="card-front">
+                      <img src="assests/cartedo.jpg" alt="Image 8">
+                    </div>
+                    <div class="card-back card-back8">
+                      <p style="text-align: center; padding: 2px;">Experience the bold and aromatic flavors of our Cartedo coffee, expertly crafted to satisfy your every craving.</p>
+                    </div>
+                  </div>
+                  <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+                </div>
+                <div class="card">
+                    <h3>Espresso:</h3>
+                  <div class="card-inner" style="margin-bottom: 5px;">
+                    <div class="card-front">
+                      <img src="assests/espresso.jpeg" alt="Image 9">
+                    </div>
+                    <div class="card-back card-back9">
+                      <p style="text-align: center; padding: 2px;">Enjoy our rich and bold Espresso, brewed to perfection for a smooth, intense coffee experience.</p>
+                    </div>
+                  </div>
+                  <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+                </div>
+              </div>
+        </section>
+
+        <section class="working-section2 bg-green side-spacing">
+        
+          <!-- Left-Aligned Content -->
+          <div class="lipish">
+            <h2 class="peach-clr para3liner">
+              We use Our Arabica Beans<br>
+              And freshly grounded spices<br>
+              to achieve our rich coffee
+            </h2>
+          </div>
+        
+          <!-- Right-Aligned Carousel -->
+          <div class="carousel">
+            <!-- <button class="arrow arrow-left" onclick="prevImage()">&#9664;</button> -->
+            <div class="carousel-images" id="carousel-images">
+              <img src="assests/coffee plant.jpg" alt="Coffee Plant">
+              <img src="assests/coffee bag.jpg" alt="Coffee Bag">
+              <img src="assests/coffee.jpg" alt="Coffee Cup">
+            </div>
+            <!-- <button class="arrow arrow-right" onclick="nextImage()">&#9654;</button> -->
+          </div>
+
+          
+        
+          <!-- <video>
+            <source src="assests/coffee making.mp4">
+          </video> -->
+
+        </section>
+        <section class="working-section bg-green side-spacing">
+          <video autoplay loop muted>
+            <source src="assests/coffee making.mp4" type="video/mp4">
+            <!-- <source src="assests/coffee making.webm" type="video/webm">
+            Your browser does not support the video tag. -->
+        </video>
+        </section>
+
+        <section class="working-section bg-green side-spacing">
+            <h2 class="peach-clr start">Our Roasting</h2>
+            <ul class="roasting-container">
+              <li class="roasting-content listing">
+                <h3 class="peach-clr">Light Roasting</h3>
+                <a href="#" class="action-btn ">↗</a>
+                <div class="roasting-img">
+                  <img src="assests/light roast.jpg" >
+                </div>
+              </li>
+              <li class="roasting-content listing">
+                <h3 class="peach-clr">Medium Roasting</h3>
+                <a href="#" class="action-btn ">↗</a>
+                <div class="roasting-img">
+                  <img src="assests/medium roast.jpg" >
+                </div>
+              </li>
+              <li class="roasting-content listing">
+                <h3 class="peach-clr">French Roasting</h3>
+                <a href="#" class="action-btn ">↗</a>
+                <div class="roasting-img">
+                  <img src="assests/french roast.jpg" >
+                </div>
+              </li>
+              <li class="roasting-content listing">
+                <h3 class="peach-clr">Dark Roasting</h3>
+                <a href="#" class="action-btn">↗</a>
+                <div class="roasting-img">
+                  <img src="assests/dark roast.jpg" >
+                </div>
+              </li>
+            </ul>
+        </section>
+    </main>
+
+
+    <footer class="bg-peach side-spacing">
+        <div class="footer-container">
+
+          <div class="footer-col">
+            <h5>Newsletter</h5>
+            <form class="footer-list" >
+              <input type="email" id="email" placeholder="Email Address"
+              autocomplete="off">
+              <input type="submit" value="Subscribe">
+            </form>
+          </div>
+
+          <div class="footer-col">
+            <h5>Privacy</h5>
+            <ul class="footer-list" >
+              <li>
+                <a href="#" class="links green-clr">Terms of use</a>
+              </li>
+              <li>
+                <a href="#" class="links green-clr">Privacy Policy</a>
+              </li>
+              <li>
+                <a href="#" class="links green-clr">Cookies</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h5>Services</h5>
+            <ul class="footer-list">
+              <li>
+                <a href="#" class="links green-clr">Shop</a>
+              </li>
+              <li>
+                <a href="#" class="links green-clr">Order Ahead</a>
+              </li>
+              <li>
+                <a href="#" class="links green-clr">Menu</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h5>About Us</h5>
+            <ul class="footer-list">
+              <li>
+                <a href="#" class="links green-clr">Find Location</a>
+              </li>
+              <li>
+                <a href="#" class="links green-clr">About us</a>
+              </li>
+              <li>
+                <a href="#" class="links green-clr">Our Story</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h5>Social Media</h5>
+            <div class="social-list social-list footer-list">
+              <a href="#" class="icons-link ">
+                  <i class="fa-brands fa-facebook-f"></i>
+              </a>
+              <a href="#" class="icons-link">
+                  <i class="fa-brands fa-twitter"></i>
+              </a>
+              <a href="#" class="icons-link ">
+                  <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="#" class="icons-link ">
+                  <i class="fa-brands fa-pinterest-p"></i>
+              </a>
+          </div>
+          </div>
+        </div>
+    </footer>
+
+
+
+
+
+    <script>
+      // JavaScript to handle cart functionality
+      let cartCount = 0;
+
+      function addToCart() {
+          // Increment the cart counter
+          cartCount++;
+          // Update the cart counter display
+          document.getElementById('cart-counter').textContent = cartCount;
+          alert('Product added to cart!');
+      }
+
+      function viewCart() {
+          alert(`You have ${cartCount} item(s) in your cart.`);
+      }
+
+
+      // JavaScript for Carousel Functionality
+      const imagesContainer = document.getElementById('carousel-images');
+        const images = document.querySelectorAll('.carousel img');
+        const totalImages = images.length;
+        let currentIndex = 0;
+
+        function showImage(index) {
+            imagesContainer.style.transform = `translateX(-${index * 100}%)`;
+        }
+
+        function nextImage() {
+            currentIndex = (currentIndex + 1) % totalImages;
+            showImage(currentIndex);
+        }
+
+        function prevImage() {
+            currentIndex = (currentIndex - 1 + totalImages) % totalImages;
+            showImage(currentIndex);
+        }
+
+        // Automatically move to the next image every 3 seconds
+        setInterval(nextImage, 4000);
+  </script>
+
+  <script src="main.js"></script>
+</body>
+</html>
